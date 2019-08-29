@@ -14,7 +14,7 @@ import com.bumptech.glide.Glide;
 
 import java.util.List;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -65,9 +65,9 @@ public class ChannelAdapter extends BaseAdapter {
     }
 
     class ViewHolder {
-        @Bind(R.id.iv_channel)
+        @BindView(R.id.iv_channel)
         ImageView ivChannel;
-        @Bind(R.id.tv_channel)
+        @BindView(R.id.tv_channel)
         TextView tvChannel;
 
         ViewHolder(View view) {

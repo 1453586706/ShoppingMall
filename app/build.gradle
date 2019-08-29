@@ -1,15 +1,16 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion "23.0.3"
+    compileSdkVersion 28
+   
     defaultConfig {
         applicationId "com.atguigu.shoppingmall"
-        minSdkVersion 14
-        targetSdkVersion 23
+        minSdkVersion 16
+        targetSdkVersion 28
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        javaCompileOptions { annotationProcessorOptions { includeCompileClasspath = true } }
     }
     buildTypes {
         release {
@@ -20,23 +21,25 @@ android {
 }
 
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
-    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    /*androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
-    })
-    compile 'com.android.support:appcompat-v7:23.3.0'
-    testCompile 'junit:junit:4.12'
-    compile 'com.jakewharton:butterknife:7.0.1'
-    compile files('libs/fastjson-1.2.4.jar')
-    compile project(':okhttputils')
-    compile 'com.android.support:recyclerview-v7:23.3.0'
-    compile project(':banner')
-    compile 'com.google.code.gson:gson:2.2.4'
-    compile project(':FlycoTabLayout_Lib')
-    compile files('libs/alipaySdk-20160516.jar')
-    compile project(':ViewPagerIndicator_library')
-    compile files('libs/picasso-2.5.2.jar')
-    compile project(':opendanmaku')
-    compile 'com.android.support:design:23.3.0'
-    compile 'com.android.support:percent:23.3.0'
+    })*/
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    /*testCompile 'junit:junit:4.12'*/
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    implementation 'com.jakewharton:butterknife-compiler:8.8.1'
+    implementation files('libs/fastjson-1.2.4.jar')
+    implementation project(':okhttputils')
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+    implementation project(':banner')
+    implementation 'com.google.code.gson:gson:2.2.4'
+    implementation project(':FlycoTabLayout_Lib')
+    implementation files('libs/alipaySdk-20160516.jar')
+    implementation project(':ViewPagerIndicator_library')
+    implementation files('libs/picasso-2.5.2.jar')
+    implementation project(':opendanmaku')
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.android.support:percent:28.0.0'
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
 }

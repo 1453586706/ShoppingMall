@@ -12,7 +12,7 @@ import com.atguigu.shoppingmall.type.bean.TagBean;
 
 import java.util.List;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -64,7 +64,7 @@ public class TagGridViewAdapter extends BaseAdapter {
     }
 
     static class ViewHolder {
-        @Bind(R.id.tv_tag)
+        @BindView(R.id.tv_tag)
         TextView tvTag;
 
         ViewHolder(View view) {

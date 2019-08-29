@@ -18,24 +18,25 @@ import com.atguigu.shoppingmall.user.fragment.UserFragment;
 
 import java.util.ArrayList;
 
-import butterknife.Bind;
+
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 public class MainActivity extends FragmentActivity {
 
-    @Bind(R.id.frameLayout)
+    @BindView(R.id.frameLayout)
     FrameLayout frameLayout;
-    @Bind(R.id.rb_home)
+    @BindView(R.id.rb_home)
     RadioButton rbHome;
-    @Bind(R.id.rb_type)
+    @BindView(R.id.rb_type)
     RadioButton rbType;
-    @Bind(R.id.rb_community)
+    @BindView(R.id.rb_community)
     RadioButton rbCommunity;
-    @Bind(R.id.rb_cart)
+    @BindView(R.id.rb_cart)
     RadioButton rbCart;
-    @Bind(R.id.rb_user)
+    @BindView(R.id.rb_user)
     RadioButton rbUser;
-    @Bind(R.id.rg_main)
+    @BindView(R.id.rg_main)
     RadioGroup rgMain;
     private ArrayList<BaseFragment> fragments;
     private int position;

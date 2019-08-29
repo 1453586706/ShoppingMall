@@ -24,7 +24,7 @@ import com.squareup.picasso.Transformation;
 import java.text.SimpleDateFormat;
 import java.util.List;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 public class HotPostListViewAdapter extends BaseAdapter {
@@ -134,21 +134,21 @@ public class HotPostListViewAdapter extends BaseAdapter {
     }
 
     static class ViewHolder {
-        @Bind(R.id.tv_hot_username)
+        @BindView(R.id.tv_hot_username)
         TextView tvHotUsername;
-        @Bind(R.id.tv_hot_addtime)
+        @BindView(R.id.tv_hot_addtime)
         TextView tvHotAddtime;
-        @Bind(R.id.iv_hot_figure)
+        @BindView(R.id.iv_hot_figure)
         ImageView ivHotFigure;
-        @Bind(R.id.ll_hot_post)
+        @BindView(R.id.ll_hot_post)
         LinearLayout llHotPost;
-        @Bind(R.id.tv_hot_saying)
+        @BindView(R.id.tv_hot_saying)
         TextView tvHotSaying;
-        @Bind(R.id.tv_hot_likes)
+        @BindView(R.id.tv_hot_likes)
         TextView tvHotLikes;
-        @Bind(R.id.tv_hot_comments)
+        @BindView(R.id.tv_hot_comments)
         TextView tvHotComments;
-        @Bind(R.id.ib_new_post_avatar)
+        @BindView(R.id.ib_new_post_avatar)
         ImageButton ibNewPostAvatar;
 
         ViewHolder(View view) {
