@@ -96,7 +96,7 @@ public class HomeFragment extends BaseFragment {
 
                         GridLayoutManager manager = new GridLayoutManager(getActivity(), 1);
 
-                        //设置滑动到哪个位置了的监听
+
                         manager.setSpanSizeLookup(new GridLayoutManager.SpanSizeLookup() {
                             @Override
                             public int getSpanSize(int position) {
