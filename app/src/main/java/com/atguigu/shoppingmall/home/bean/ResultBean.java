@@ -8,7 +8,7 @@ import java.util.List;
  * Created by Administrator on 2016/9/28.
  */
 public class ResultBean extends JSONObject {
-
+git cl
     private SeckillInfoBean seckill_info;
     private List<BannerInfoBean> banner_info;
     private List<ChannelInfoBean> channel_info;
